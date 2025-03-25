@@ -3,9 +3,13 @@
 #em python para ler o nome dos 3 candidatos e receber os votos. O programa deve
 #informar ao final quem foi o candidato eleito.
 
-nome1 = input('digite o nome do primeiro candidato')
-nome2 = input('digite o nome do segundo candidato')
-nome3 = input('digite o nome do terceiro candidato')
+#nome1 = input('digite o nome do primeiro candidato')
+#nome2 = input('digite o nome do segundo candidato')
+#nome3 = input('digite o nome do terceiro candidato')
+nome1 = 'rene'
+nome2 = 'jose'
+nome3 = 'maria'
+
 
 c1 = 0
 c2 = 0
