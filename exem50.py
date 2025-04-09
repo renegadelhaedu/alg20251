@@ -13,16 +13,23 @@ while opcao != 0:
     if opcao == 1:
         login = input('qual o login do usuario')
         senha = input('qual a senha do usuario')
-        usuarios.append(login)
-        senhas.append(senha)
-        print('usuario cadastrado com sucesso!')
+        if login not in usuarios:
+            usuarios.append(login)
+            senhas.append(senha)
+            print('usuario cadastrado com sucesso!')
+        else:
+            print('usuario existente no sistema')
     elif opcao == 2:
         login_user = input('digite seu login')
         senha_user = input('digite sua senha')
-        if usuarios.count(login_user) > 0:
+
+        #if usuarios.count(login_user) > 0:
+        if login_user in usuarios:
             indice = usuarios.index(login_user)
             if senha_user == senhas[indice]:
                 print('login realizado com sucesso')
+                print('---MENU usuario---')
+
             else:
                 print('usuario ou senha incorretos')
         else:
