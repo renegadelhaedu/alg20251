@@ -7,6 +7,7 @@ while op != 0:
     print('1-cadastrar usuario')
     print('2-remover usuario')
     print('3-listar alunos')
+    print('4-buscar nome')
 
     op = int(input('digite a opcao desejada '))
 
@@ -32,3 +33,12 @@ while op != 0:
     elif op == 3:
         for aluno in alunos:
             print(aluno)
+    elif op == 4:
+        nome_busca = input('digite o nome para busca ')
+        for aluno in alunos:
+            if nome_busca == aluno[0]:
+                print(f'Nome: {aluno[0]}')
+                print(f'Matricula: {aluno[1]}')
+                print(f'Curso: {aluno[2]}')
+                print(f'mensalidade: {aluno[3]}')
+            print(' - ')
