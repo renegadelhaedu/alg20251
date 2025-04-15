@@ -6,7 +6,7 @@ while op != 0:
     print('----MENU----')
     print('1-cadastrar usuario')
     print('2-remover usuario')
-    print('3-buscar usuario')
+    print('3-listar alunos')
 
     op = int(input('digite a opcao desejada '))
 
@@ -29,3 +29,6 @@ while op != 0:
             print('aluno removido com sucesso')
         else:
             print('matricula nao encontrada')
+    elif op == 3:
+        for aluno in alunos:
+            print(aluno)
