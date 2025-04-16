@@ -42,3 +42,16 @@ while op != 0:
                 print(f'Curso: {aluno[2]}')
                 print(f'mensalidade: {aluno[3]}')
             print(' - ')
+
+    elif op == 5:
+        soma = 0
+        qtde = 0
+        curso = input('digite o curso para descobrir a media ')
+
+        for aluno in alunos:
+            if curso == aluno[2]:
+                soma += aluno[3]
+                qtde += 1
+
+        media = soma / qtde
+        print(f'a media de mensalidades do curso {curso} foi {media}')
