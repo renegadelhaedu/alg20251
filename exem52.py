@@ -55,3 +55,26 @@ while op != 0:
 
         media = soma / qtde
         print(f'a media de mensalidades do curso {curso} foi {media}')
+
+    elif op == 6:
+        mat = input('digite sua matricula ')
+        achei = False
+        for i in range(len(alunos)):
+            if mat == alunos[i][1]:
+                nome = input('atualize seu nome')
+                curso = input('atualize seu curso')
+                mensal = input('atualize sua mensalidade')
+                achei = True
+                break
+
+        if achei:
+            print('dados atualizados com sucesso')
+        else:
+            print('matricula inexistente')
+
+
+
+
+
+
+
