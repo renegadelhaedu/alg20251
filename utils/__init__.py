@@ -1,5 +1,11 @@
-def a():
-    return 'sdf'
+import random
+
+def gerar_id(lista_ids:list):
+    num = random.randint(0, 9999999)
+    while lista_ids.count(num) > 0:
+        num = random.randint(0, 9999999)
+    return num
+
 
 def verificar_data(data):
     dia = int(data.split('/')[0])
